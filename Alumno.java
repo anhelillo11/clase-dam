@@ -34,7 +34,7 @@ public class Alumno {
      * Imprime por pantalla los detalles del alumno
      */
     public void imprimeDetalles() {
-        System.out.println(nombre + " (" + numeroMatricula + ") - " + edad + " aÃ±os");
+        System.out.println(nombre + " (" + numeroMatricula + ") - " + edad + " años");
     }
     
     /**
@@ -43,5 +43,11 @@ public class Alumno {
      */
     public String getNombreUsuarioGithub() {
         return nombre.substring(0, 3) + numeroMatricula.substring(0, 4);
+    }
+    
+    public String imprimeDatosAlumno() {
+        String alumno = "";
+        alumno = (". " + nombre + " (" + numeroMatricula + ") - " + edad + " años");
+        return alumno;
     }
 }
